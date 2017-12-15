@@ -1,0 +1,578 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+/* MOBIL */
+
+@media only screen and (max-width:480px) {
+
+    #fp-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/baggrundfarver.png);
+        background-size: cover;
+        background-position: 50%;
+        opacity: 0.6;
+        z-index: -2;
+    }
+
+    #forside-background {
+        display: none;
+    }
+
+    #reflektioner {
+        font-family: News Cycle;
+        text-align: justify;
+    }
+
+    .casebilleder {
+        width: 100%;
+    }
+
+    .casebillederhojre {
+        width: 100%;
+    }
+
+    .casebilledervenstre {
+        width: 100%
+    }
+
+    #reflekterendeprofil {
+        display: none;
+    }
+
+    #filmfixet {
+        width: 100%;
+    }
+
+
+    #casetekstmario {
+        font-family: News Cycle;
+        text-align: justify;
+    }
+
+    .majahinzel {
+        font-family: Amatic SC;
+        font-size: 60px;
+        text-align: left;
+    }
+
+    .mandogfugl {
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .fugl {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+
+    .casetekst {
+        font-family: News Cycle;
+        text-align: justify;
+    }
+
+    .tekst {
+        font-family: News Cycle;
+        text-align: justify;
+    }
+
+    .forsidetekst {
+        font-family: News Cycle;
+        text-align: justify;
+    }
+
+    .overskrift {
+        font-family: Amatic SC;
+        font-size: 30px;
+    }
+
+    .bundfarve {
+        width: 100%;
+    }
+
+    .filmfixet {
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    .et {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .to {
+        width: 100%;
+        margin-top: 54px;
+    }
+
+    .tre {
+        width: 100%;
+        margin-top: 56px;
+    }
+
+    /* HEADER -START- */
+    #desktop {
+        display: none;
+    }
+
+
+    /* MOBILE "BURGER" MENU -START- */
+    #mobile-menu {
+        display: inline-block;
+        position: fixed;
+        z-index: 1;
+        margin-left: 80%;
+        margin-top: 7%;
+    }
+
+    /* "BURGER" BUTTON */
+    #mobile-menu input {
+        display: inline;
+        width: 36px;
+        height: 30px;
+        position: fixed;
+        opacity: 0;
+        z-index: 2;
+        margin-left: -0.4%;
+        margin-top: -2%;
+    }
+
+    #mobile-menu span {
+        display: inline;
+        float: right;
+        clear: right;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        background-color: darkgrey;
+        border-radius: 5px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.3s ease-out,
+        background 0.3s ease-out,
+        opacity 0.3s ease-out;
+    }
+
+    #mobile-menu input:checked ~ span:nth-child(2) {
+        transform: rotate(45deg) translate(2px, 0px);
+    }
+
+    #mobile-menu input:checked ~ span:nth-child(3) {
+        opacity: 0;
+    }
+
+    #mobile-menu input:checked ~ span:nth-child(4) {
+        transform: rotate(-45deg) translate(-2px, 0px);
+    }
+
+    /* OFF SCREEN MENU */
+    #navigation-mobile {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: -7%;
+        margin-left: -80%;
+        background-color: indianred;
+        list-style-type: none;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+        z-index: -1;
+    }
+
+    #navigation-mobile li {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #navigation-mobile li a {
+        text-decoration: none;
+        font-family: 'Amatic SC';
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-item-1 {
+        margin-top: 45%;
+    }
+
+    .nav-item-3 {
+        margin-bottom: 5%;
+    }
+
+    #mobile-menu input:checked ~ ul {
+        transform: none;
+    }
+    /* MOBILE "BURGER" MENU -END- */
+    /* HEADER -END- */
+}
+
+
+
+/* TABLET */
+
+@media (min-width:481px) and (max-width:1023px) {
+
+    /* BAGGRUNDSBILLEDE */
+    #fp-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/baggrundfarver.png);
+        background-size: cover;
+        background-position: 50%;
+        opacity: 0.6;
+        z-index: -2;
+    }
+
+    #forside-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/baggrundforside.png);
+        background-size: cover;
+        background-position: 50%;
+        opacity: 0.6;
+        z-index: -2;
+    }
+
+    /* BAGGRUNDSBILLEDE SLUT*/
+    
+    /* HEADER */
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+
+    .navigation {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: inline;
+        list-style-type: none;
+        float: right;
+        margin-top: 4.5%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-right: 2%;
+        padding-left: 2%;
+        border-bottom: 1px solid red;
+    }
+
+
+    .nav-item-1 {
+        margin-right: 3%;
+        clear: right;
+    }
+
+    .navigation li a {
+        display: inline;
+        font-family: 'Amatic SC';
+        font-size: 1.7em;
+        color: black;
+        text-decoration: none;
+    }
+
+    /* HEADER SLUT*/
+    .majahinzel {
+        font-family: Amatic SC;
+        font-size: 490%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .mandogfugl {
+        margin-right: 0px;
+        height: 700px;
+        float: right;
+    }
+    
+    #reflektioner {
+        margin-top: 10px;
+        margin-left: 40px;
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 40px;
+    }
+
+    .forsidetekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-left: 40px;
+        
+    }
+    .tekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    
+    .overskrift {
+        font-family: Amatic SC;
+        font-size: 200%;
+        margin-left: 40px;
+    }    
+    
+    .casetekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .et {
+        margin-left: 20%;
+    }
+    
+    .to {
+        margin-left:20%;
+    }
+    
+    .casebillederhojre {
+        width: 100%;
+    }
+    
+    
+
+    #reflekterendeprofil {
+        display: none;
+        
+    }
+    
+    #filmfixet {
+        width: 30%;
+        margin-left: 35%;
+    }
+    
+     #casetekstmario {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    
+    
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    /* BAGGRUNDSBILLEDER */
+    #fp-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/baggrundfarver.png);
+        background-size: cover;
+        background-position: 50%;
+        opacity: 0.6;
+        z-index: -2;
+    }
+
+    #forside-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../images/baggrundforside.png);
+        background-size: cover;
+        background-position: 50%;
+        opacity: 0.6;
+        z-index: -2;
+    }
+
+    /* BAGGRUNDSBILLEDER SLUT*/
+    .majahinzel {
+        font-family: Amatic SC;
+        font-size: 100px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .mandogfugl {
+        margin-right: 160px;
+        height: 700px;
+        float: right;
+    }
+
+    #reflektioner {
+        margin-top: 10px;
+        margin-left: 40px;
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 40px;
+    }
+
+    .forsidetekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 750px;
+        margin-left: 20px;
+    }
+    .tekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    .casetekst {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 40px;
+        margin-top: 125px;
+        margin-left: 40px;
+    }
+
+    .casebillederhojre {
+        width: 50%;
+        float: right;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
+    }
+
+    .casebilledervenstre {
+        width: 35%;
+        float: left;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 50px;
+    }
+
+    #reflekterendeprofil {
+        width: 35%;
+        float: left;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+    }
+
+
+    #filmfixet {
+        width: 30%;
+        float: right;
+        margin-right: 80px;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+    #casetekstmario {
+        font-family: News Cycle;
+        text-align: justify;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: 70px;
+    }
+
+    .fugl {
+        height: 150px;
+    }
+
+    .overskrift {
+        font-family: Amatic SC;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .bundfarve {
+        width: 100%;
+    }
+
+    .filmfixet {
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    .et {
+        width: 35%;
+        float: left;
+        margin-right: 40px;
+        margin-left: 40px;
+
+    }
+
+    .to {
+        width: 35%;
+        float: left;
+        margin-right: 40px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .tre {
+        width: 100%;
+        margin-top: 56px;
+    }
+
+    /* HEADER */
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+
+    .navigation {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: inline;
+        list-style-type: none;
+        float: right;
+        margin-top: 4.5%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-right: 2%;
+        padding-left: 2%;
+        border-bottom: 1px solid red;
+    }
+
+
+    .nav-item-1 {
+        margin-right: 3%;
+        clear: right;
+    }
+
+    .navigation li a {
+        display: inline;
+        font-family: 'Amatic SC';
+        font-size: 1.7em;
+        color: black;
+        text-decoration: none;
+    }
+    
+    /*HEADER SLUT*/
+
+}
